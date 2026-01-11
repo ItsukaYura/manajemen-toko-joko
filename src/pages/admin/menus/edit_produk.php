@@ -1,9 +1,9 @@
 <?php
-include "database.php";
-$query = mysqli_query ($koneksi, "select * from menus where id_produk ='$_GET[id_produk]' ");
+include "../../../config/database.php";
+$query = mysqli_query ($koneksi, "select * from menus WHERE id_produk ='$_GET[id_produk]' ");
 $row = mysqli_fetch_array($query);
 ?>
-<form method= "POST" action="update_produk.php">;
+<form method= "POST" action="/admin/update">;
 <class= table>
     <tr>
         <td>ID Produk</td>
@@ -17,17 +17,17 @@ $row = mysqli_fetch_array($query);
 </tr>
 <tr>
     <td>Stok</td>
-    <td><input type="text" class="form-control form=control-sm" name="stok" value="<?php
-        echo $row['spesialisasi']; ?>"></td>
+    <td><input type="number" class="form-control form=control-sm" name="stok" value="<?php
+        echo $row['stok']; ?>"></td>
 </tr>
 <tr>
     <td>Harga</td>
-    <td><input type="text" class="form-control form=control-sm" name="harga" value="<?php
-        echo $row['no_str']; ?>"></td>
+    <td><input type="number" class="form-control form=control-sm" name="harga" value="<?php
+        echo $row['harga']; ?>"></td>
 </tr>
 <tr>
     <td colspan="2"><input class="form-control form=control-sm" type="submit" value="simpan">
-        <a href = "?page=index.php">
+        <a href = "/admin/simpan">
             <input type="button" value="kembali">
         </a>
     </td>
