@@ -30,5 +30,8 @@ switch ($path) {
     case '/admin/hapus';
         require __DIR__ . $page . '/admin/menus/hapus_produk.php';
         break;
+    case '/admin/tampil';
+        require __DIR__ . $page . '/admin/menus/tampilan_produk.php';
+        break;
 }
 ?> 

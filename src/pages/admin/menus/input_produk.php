@@ -1,4 +1,4 @@
-<form method= "POST" action="simpan_produk.php">;
+<form method= "POST" action="/admin/simpan">;
 <table border='1'>
     <tr>
         <td>ID Produk</td>
@@ -10,14 +10,14 @@
 </tr>
 <tr>
     <td>Stok</td>
-    <td><input type="text" class="form-control form=control-sm" name="stok"></td>
+    <td><input type="number" class="form-control form=control-sm" name="stok"></td>
 </tr>
 <tr>
     <td>Harga</td>
-    <td><input type="text" class="form-control form=control-sm" name="harga"></td>
+    <td><input type="number" class="form-control form=control-sm" name="harga"></td>
 </tr>
 <tr>
-    <td colspan="2"><input type="submit" value="simpan"></td>
+    <td colspan="2"><input type="submit" value="simpan data"></td>
 </tr>
 </table>
 </form>

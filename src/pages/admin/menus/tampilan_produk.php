@@ -1,5 +1,5 @@
 <?php
-include "database.php";
+include "../../../config/database.php";
 echo "<CENTER>List Produk Toko Joko<CENTER><br>";
 echo "<a href='input_produk.php'>INPUT DATA PRODUK</a><br><br>";
 echo "<table border='1'>";
