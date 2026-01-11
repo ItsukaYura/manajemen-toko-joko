@@ -18,7 +18,7 @@ echo "<td>$row[id_produk]</td>";
 echo "<td>$row[nama_Produk]</td>";
 echo "<td>$row[stok]</td>";
 echo "<td>$row[harga]</td>";
-echo "<td><a class='badge badge-warning' href='?page=edit_produk&id_produk=$row[id_produk]'> <i class='mdi mdi-pencil mx-0'></i>EDIT</a> | <a class='badge badge-danger' href='hapus_produk.php?id=$row[id_produk]'>  HAPUS</a></td>";
+echo "<td><a class='badge badge-warning' href='/admin/edit?id_produk=$row[id_produk]'> <i class='mdi mdi-pencil mx-0'></i>EDIT</a> | <a class='badge badge-danger' href='/admin/hapus?id=$row[id_produk]'>  HAPUS</a></td>";
 }
 echo "</table>";
 
